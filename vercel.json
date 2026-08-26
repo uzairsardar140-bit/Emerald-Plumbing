@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/Desktop/plumbing web client/Emerald Plumbing/index.html"
+    }
+  ]
+}

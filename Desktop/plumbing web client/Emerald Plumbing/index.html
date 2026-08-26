@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emerald Plumbing | 24/7 Orlando Plumbing & Repipe Specialists</title>
+  <meta name="description" content="Emerald Plumbing provides 24/7 residential and commercial plumbing, drain, water heater, filtration, and repiping services across Orlando and Central Florida.">
+  <meta name="theme-color" content="#0d2340">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <style>
+    :root { --ink:#17342d; --forest:#06483b; --emerald:#15966a; --mint:#e4f3e9; --coral:#e0ad2f; --cream:#f5f8f3; --paper:#fffefa; --line:#d2e2d6; --muted:#5f7169; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--cream); color:var(--ink); font-family:'DM Sans',sans-serif; line-height:1.6; }
+    a { color:inherit; text-decoration:none; }
+    img { display:block; width:100%; object-fit:cover; }
+    .wrap { width:min(1160px, calc(100% - 40px)); margin:0 auto; }
+    .topline { background:var(--forest); color:#d9f0df; font-size:.8rem; letter-spacing:.03em; }
+    .topline .wrap { min-height:38px; display:flex; justify-content:space-between; align-items:center; gap:16px; }
+    .topline strong { color:#fff; }
+    .toplinks { display:flex; gap:18px; }
+    header { background:var(--paper); border-bottom:1px solid rgba(23,52,45,.1); position:sticky; top:0; z-index:10; }
+    .nav { min-height:82px; display:flex; align-items:center; justify-content:space-between; gap:22px; }
+    .brand { display:flex; align-items:center; gap:12px; font-weight:700; letter-spacing:-.03em; }
+    .brand-mark { width:43px; height:43px; background:var(--emerald); color:#fff; border-radius:14px 14px 14px 3px; display:grid; place-items:center; font-family:Fraunces,serif; font-size:1.55rem; box-shadow:5px 5px 0 #f0d66d; }
+    .brand-logo { width:225px; height:auto; max-height:58px; object-fit:contain; object-position:left center; }
+    .brand-name { font-size:1.1rem; line-height:1.05; }
+    .brand-name small { display:block; color:var(--muted); font-size:.62rem; font-weight:600; letter-spacing:.11em; text-transform:uppercase; margin-top:4px; }
+    nav { display:flex; align-items:center; gap:24px; color:#41655a; font-size:.88rem; font-weight:600; }
+    nav a:hover { color:var(--emerald); }
+    .button { display:inline-flex; align-items:center; justify-content:center; gap:9px; border:0; border-radius:6px; padding:13px 20px; font:700 .88rem 'DM Sans',sans-serif; cursor:pointer; transition:transform .2s, background .2s; }
+    .button:hover { transform:translateY(-2px); }
+    .button.primary { color:#17342d; background:var(--coral); box-shadow:0 7px 18px rgba(224,173,47,.25); }
+    .button.dark { color:#fff; background:var(--forest); }
+    .button.outline { color:var(--forest); background:transparent; border:1px solid #8ebba0; }
+    .menu { display:none; background:none; border:0; font-size:1.7rem; color:var(--forest); }
+    .hero { background:var(--forest); color:#fff; position:relative; overflow:hidden; }
+    .hero:after { content:''; position:absolute; width:470px; height:470px; right:-130px; top:-170px; border:1px solid rgba(202,235,207,.26); border-radius:50%; box-shadow:0 0 0 54px rgba(202,235,207,.04),0 0 0 110px rgba(202,235,207,.04); }
+    .hero-grid { min-height:610px; display:grid; grid-template-columns:1.05fr .95fr; align-items:center; gap:64px; position:relative; z-index:1; }
+    .eyebrow { color:#a7df70; text-transform:uppercase; letter-spacing:.14em; font-size:.74rem; font-weight:700; }
+    h1,h2,h3,p { margin-top:0; }
+    h1,h2 { font-family:Fraunces,serif; letter-spacing:-.045em; line-height:1.05; }
+    h1 { max-width:650px; font-size:clamp(3rem,6vw,5.7rem); margin:14px 0 22px; }
+    .hero-copy { max-width:560px; color:#c9e0d1; font-size:1.05rem; }
+    .hero-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
+    .hero-actions .outline { border-color:#78ad8d; color:#fff; }
+    .hero-note { display:flex; align-items:center; gap:11px; margin-top:25px; color:#b2d0bc; font-size:.83rem; }
+    .hero-note b { color:#fff; }
+    .hero-photo { height:455px; border-radius:130px 12px 12px 12px; overflow:hidden; border:10px solid rgba(255,255,255,.1); position:relative; box-shadow:20px 24px 0 rgba(0,0,0,.09); }
+    .hero-photo img { height:100%; }
+    .photo-label { position:absolute; bottom:18px; left:18px; background:#fff; color:var(--ink); border-radius:6px; padding:12px 15px; font-size:.75rem; font-weight:700; box-shadow:0 8px 20px rgba(0,0,0,.18); }
+    .trust { background:var(--mint); border-bottom:1px solid #c5dfcc; }
+    .trust .wrap { min-height:92px; display:grid; grid-template-columns:repeat(4,1fr); align-items:center; gap:20px; }
+    .trust-item { display:flex; align-items:center; gap:11px; color:var(--forest); font-size:.85rem; font-weight:700; }
+    .trust-icon { width:32px; height:32px; display:grid; place-items:center; border-radius:50%; background:#fff; color:var(--emerald); font-size:1rem; }
+    section { padding:110px 0; }
+    .section-head { display:flex; justify-content:space-between; align-items:end; gap:30px; margin-bottom:42px; }
+    .section-head h2 { font-size:clamp(2.3rem,4vw,4rem); margin:11px 0 0; max-width:650px; }
+    .section-head p { max-width:390px; margin:0; color:var(--muted); }
+    .services { background:var(--paper); }
+    .service-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:15px; }
+    .service-card { border:1px solid var(--line); padding:25px 22px 27px; min-height:235px; background:#fff; transition:transform .2s, box-shadow .2s; }
+    .service-card:hover { transform:translateY(-5px); box-shadow:0 15px 26px rgba(6,72,59,.1); }
+    .service-card .icon { color:var(--coral); font-size:1.7rem; margin-bottom:27px; }
+    .service-card h3 { font-family:Fraunces,serif; font-size:1.35rem; margin-bottom:8px; }
+    .service-card p { color:var(--muted); font-size:.87rem; margin:0; }
+    .split { display:grid; grid-template-columns:.9fr 1.1fr; gap:90px; align-items:center; }
+    .about-photo { height:500px; border-radius:12px; overflow:hidden; position:relative; }
+    .about-photo img { height:100%; }
+    .stat { position:absolute; bottom:20px; right:20px; width:180px; padding:19px; background:var(--coral); color:#fff; }
+    .stat strong { display:block; font:700 2.3rem Fraunces,serif; line-height:1; }
+    .stat span { display:block; font-size:.75rem; margin-top:7px; }
+    .checks { display:grid; grid-template-columns:1fr 1fr; gap:25px 22px; margin:32px 0; }
+    .check { display:flex; gap:12px; font-weight:700; font-size:.92rem; }
+    .check b { color:var(--coral); }
+    .check span { display:block; color:var(--muted); font-weight:400; font-size:.8rem; margin-top:3px; }
+    .feature { background:var(--mint); }
+    .feature .split { grid-template-columns:1.1fr .9fr; }
+    .feature-box { background:var(--forest); color:#fff; padding:48px; position:relative; }
+    .feature-box h2 { font-size:3rem; margin:12px 0 18px; }
+    .feature-box p { color:#c9e0d1; }
+    .feature-list { border-top:1px solid #4b806d; margin-top:28px; }
+    .feature-list div { padding:15px 0; border-bottom:1px solid #4b806d; display:flex; justify-content:space-between; font-size:.88rem; }
+    .feature-list b { color:#e8c958; }
+    .reviews { background:var(--cream); }
+    .review-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:15px; }
+    .review { background:#fff; border:1px solid var(--line); padding:28px; }
+    .stars { color:#e6a23c; letter-spacing:3px; font-size:.9rem; }
+    .review blockquote { font:600 1.05rem/1.5 Fraunces,serif; margin:20px 0 28px; }
+    .review cite { color:var(--muted); font-size:.8rem; font-style:normal; }
+    .areas { background:var(--paper); }
+    .area-box { background:var(--coral); color:#fff; padding:35px 42px; display:flex; justify-content:space-between; align-items:center; gap:28px; }
+    .area-box h2 { font-size:2.4rem; margin:0 0 10px; }
+    .area-box p { margin:0; color:#fff4c7; }
+    .area-list { max-width:410px; display:flex; flex-wrap:wrap; justify-content:flex-end; gap:8px; }
+    .area-list span { padding:8px 12px; border:1px solid rgba(255,255,255,.45); font-size:.78rem; }
+    .contact { background:var(--paper); padding-top:30px; }
+    .contact-grid { display:grid; grid-template-columns:.8fr 1.2fr; gap:72px; align-items:start; }
+    .contact h2 { font-size:3.5rem; margin:12px 0 18px; }
+    .contact-info { border-top:1px solid var(--line); margin-top:35px; }
+    .contact-info div { padding:17px 0; border-bottom:1px solid var(--line); display:flex; gap:15px; font-size:.9rem; }
+    .contact-info strong { min-width:75px; color:var(--muted); font-size:.75rem; text-transform:uppercase; letter-spacing:.08em; }
+    form { display:grid; grid-template-columns:1fr 1fr; gap:14px; background:#edf5ef; padding:28px; }
+    label { display:block; font-size:.78rem; font-weight:700; color:var(--forest); }
+    input,textarea { width:100%; border:1px solid #c7dccd; background:#fff; padding:13px 14px; margin-top:7px; border-radius:3px; font:inherit; color:var(--ink); }
+    textarea { min-height:120px; resize:vertical; }
+    .full { grid-column:1 / -1; }
+    form .button { justify-self:start; margin-top:4px; }
+    #form-status { grid-column:1/-1; color:var(--emerald); font-size:.85rem; margin:0; }
+    footer { background:var(--forest); color:#cbd7e5; padding:60px 0 26px; }
+    .footer-grid { display:grid; grid-template-columns:1.3fr .8fr .9fr; gap:60px; padding-bottom:45px; border-bottom:1px solid #3c7765; }
+    footer .brand { color:#fff; margin-bottom:20px; }
+    footer p { max-width:330px; font-size:.85rem; }
+    footer h3 { color:#fff; font-size:.82rem; text-transform:uppercase; letter-spacing:.1em; }
+    footer ul { list-style:none; padding:0; margin:0; font-size:.85rem; line-height:2.15; }
+    footer a:hover { color:#fff; }
+    .copyright { padding-top:22px; display:flex; justify-content:space-between; font-size:.75rem; }
+    .mobile-call { display:none; }
+    [data-reveal] { opacity:0; transform:translateY(20px); transition:opacity .7s, transform .7s; }
+    [data-reveal].visible { opacity:1; transform:none; }
+    @media (max-width: 900px) { nav { gap:13px; } .service-grid { grid-template-columns:repeat(2,1fr); } .hero-grid,.split,.feature .split { gap:42px; } .hero-grid { grid-template-columns:1fr 1fr; } .contact-grid { gap:35px; } }
+    @media (max-width: 680px) { .wrap { width:min(100% - 28px, 560px); } .topline .wrap { justify-content:center; } .toplinks { display:none; } .nav { min-height:70px; } .brand-logo { width:175px; max-height:46px; } nav { display:none; } .menu { display:block; } header.open nav { display:flex; position:absolute; top:70px; left:0; right:0; padding:18px 20px; background:#fff; flex-direction:column; align-items:flex-start; border-top:1px solid var(--line); box-shadow:0 10px 18px #06483b15; } .nav > .button { display:none; } .hero-grid { grid-template-columns:1fr; padding:72px 0 88px; } h1 { font-size:3.3rem; } .hero-photo { height:310px; border-radius:80px 10px 10px 10px; } .trust .wrap { grid-template-columns:1fr 1fr; min-height:auto; padding:22px 0; gap:18px 10px; } .trust-item { font-size:.72rem; } section { padding:75px 0; } .section-head { display:block; margin-bottom:28px; } .section-head p { margin-top:17px; } .service-grid,.review-grid { grid-template-columns:1fr; } .service-card { min-height:0; } .split,.feature .split,.contact-grid { grid-template-columns:1fr; gap:30px; } .about-photo { height:350px; } .checks { gap:18px 10px; } .feature-box { padding:30px 24px; } .feature-box h2,.contact h2 { font-size:2.7rem; } .area-box { display:block; padding:30px 25px; } .area-list { justify-content:flex-start; margin-top:22px; } form { padding:20px; grid-template-columns:1fr; } .full { grid-column:auto; } #form-status { grid-column:auto; } .footer-grid { grid-template-columns:1fr 1fr; gap:32px; } .footer-grid > :first-child { grid-column:1/-1; } .copyright { display:block; } .copyright span { display:block; margin-top:8px; } .mobile-call { display:flex; position:fixed; bottom:0; left:0; right:0; z-index:20; background:var(--coral); color:#17342d; justify-content:center; padding:14px; font-weight:700; box-shadow:0 -5px 18px #17342d25; } body { padding-bottom:53px; } }
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Plumber","name":"Emerald Plumbing","url":"https://www.emeraldplumbing.net/","telephone":"+1-407-898-3538","email":"Info@emeraldplumbing.net","address":{"@type":"PostalAddress","streetAddress":"2311 Henderson Dr Unit A","addressLocality":"Orlando","addressRegion":"FL","postalCode":"32806","addressCountry":"US"},"areaServed":["Orlando","Winter Park","Oviedo","Maitland","Heathrow","Longwood","Belle Isle","Windermere","Lake Mary"],"openingHours":"Mo-Su 00:00-23:59"}
+  </script>
+</head>
+<body>
+  <div class="topline"><div class="wrap"><span><strong>24/7 emergency plumbing</strong> across Central Florida</span><div class="toplinks"><a href="mailto:Info@emeraldplumbing.net">Info@emeraldplumbing.net</a><a href="#contact">Request service</a></div></div></div>
+  <header id="site-header"><div class="wrap nav"><a class="brand" href="#top" aria-label="Emerald Plumbing home"><img class="brand-logo" src="https://www.emeraldplumbing.net/images/logo.png" alt="Emerald Plumbing of Orlando"></a><nav aria-label="Main navigation"><a href="#services">Services</a><a href="#why-us">Why Emerald</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></nav><a class="button primary" href="tel:+14078983538">Call (407) 898-3538</a><button class="menu" aria-label="Open menu">&#9776;</button></div></header>
+  <main id="top">
+    <section class="hero"><div class="wrap hero-grid"><div data-reveal><div class="eyebrow">Orlando's full-service plumbing team</div><h1>Good plumbing keeps life moving.</h1><p class="hero-copy">From a late-night leak to a whole-home repipe, Emerald Plumbing brings skilled people, clear answers, and 24/7 help to every job.</p><div class="hero-actions"><a class="button primary" href="tel:+14078983538">Call us now <span>↗</span></a><a class="button outline" href="#contact">Get a free quote</a></div><div class="hero-note"><span>●</span><span><b>Ready when you need us.</b><br>Residential, commercial & emergency service.</span></div></div><div class="hero-photo" data-reveal><img src="https://www.emeraldplumbing.net/images/header-plumbers.jpg" alt="Emerald Plumbing team and service trucks in Orlando"><div class="photo-label">Trusted in Orlando since day one</div></div></div></section>
+    <div class="trust"><div class="wrap"><div class="trust-item"><span class="trust-icon">✓</span>Licensed & insured</div><div class="trust-item"><span class="trust-icon">24</span>24/7 emergency help</div><div class="trust-item"><span class="trust-icon">$</span>Upfront estimates</div><div class="trust-item"><span class="trust-icon">★</span>Quality workmanship</div></div></div>
+    <section class="services" id="services"><div class="wrap"><div class="section-head" data-reveal><div><div class="eyebrow">What we do</div><h2>Plumbing help, without the runaround.</h2></div><p>Qualified techs, thoughtful recommendations, and the right tools for the job. Big or small, we handle it all.</p></div><div class="service-grid"><article class="service-card" data-reveal><div class="icon">⌁</div><h3>Emergency plumbing</h3><p>Fast response for leaks, bursts, backups, and the surprises that cannot wait.</p></article><article class="service-card" data-reveal><div class="icon">↻</div><h3>Whole-home repiping</h3><p>Least-intrusive repipe solutions for aging CPVC, polybutylene, and problem pipes.</p></article><article class="service-card" data-reveal><div class="icon">◉</div><h3>Water heaters</h3><p>Electric, gas, hybrid, and tankless systems installed and serviced properly.</p></article><article class="service-card" data-reveal><div class="icon">⌕</div><h3>Drains & sewer</h3><p>Camera inspection, jetting, cleaning, and repairs that get flow back.</p></article><article class="service-card" data-reveal><div class="icon">♢</div><h3>Water filtration</h3><p>Enjoy cleaner, softer water with a system chosen for your home.</p></article><article class="service-card" data-reveal><div class="icon">⌂</div><h3>Fixtures & appliances</h3><p>Expert installation for faucets, sinks, toilets, disposals, and more.</p></article><article class="service-card" data-reveal><div class="icon">▱</div><h3>Commercial plumbing</h3><p>Dependable service for restaurants, offices, retail, medical, and more.</p></article><article class="service-card" data-reveal><div class="icon">✦</div><h3>Gas & backflow</h3><p>Certified installation, repair, testing, and practical guidance.</p></article></div></div></section>
+    <section id="why-us"><div class="wrap split"><div class="about-photo" data-reveal><img src="https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&w=1400&q=90" alt="Plumber engineer in a hard hat working on a home service repair"><div class="stat"><strong>24/7</strong><span>Here for plumbing emergencies, day or night.</span></div></div><div data-reveal><div class="eyebrow">Why Emerald Plumbing</div><h2>Professional work. Personal service.</h2><p>We treat every home and business like it belongs to someone we know. That means showing up prepared, explaining the options, and leaving the space better than we found it.</p><div class="checks"><div class="check"><b>✓</b><div>Fast, capable response<span>Experienced techs ready for urgent calls.</span></div></div><div class="check"><b>✓</b><div>Clear pricing<span>Know what the work means before it begins.</span></div></div><div class="check"><b>✓</b><div>Local knowledge<span>Serving Orlando and the communities around it.</span></div></div><div class="check"><b>✓</b><div>Work that lasts<span>Thoughtful repairs, quality parts, no shortcuts.</span></div></div></div><a class="button dark" href="#contact">Talk to a plumber</a></div></div></section>
+    <section class="feature"><div class="wrap split"><div data-reveal><div class="eyebrow">Built for Central Florida homes</div><h2>When pipes age, your home shouldn't have to show it.</h2><p>Our repipe crews specialize in upgrading aging plumbing with a careful, organized process that protects your home and restores confidence in what is behind the walls.</p><a class="button dark" href="tel:+14078983538">Ask about repiping</a></div><div class="feature-box" data-reveal><div class="eyebrow">The Emerald difference</div><h2>Done right, with room to breathe.</h2><p>We plan the work, communicate throughout, and keep disruption to a minimum.</p><div class="feature-list"><div><span>Residential repipes</span><b>01</b></div><div><span>Commercial buildings</span><b>02</b></div><div><span>High-rise & condo work</span><b>03</b></div></div></div></div></section>
+    <section class="reviews" id="reviews"><div class="wrap"><div class="section-head" data-reveal><div><div class="eyebrow">Kind words from customers</div><h2>A reputation built one call at a time.</h2></div><p>Real people call us because they want the work handled with care. That is the standard we bring to every visit.</p></div><div class="review-grid"><article class="review" data-reveal><div class="stars">★★★★★</div><blockquote>“Some of the best customer service skills I've ever encountered. I recommended them to another coworker already.”</blockquote><cite>Ezella Cason · Orlando</cite></article><article class="review" data-reveal><div class="stars">★★★★★</div><blockquote>“Emerald has serviced our rental properties and our home for years. Dependable, professional, and easy to work with.”</blockquote><cite>Dr. Michael Bigly · Central Florida</cite></article><article class="review" data-reveal><div class="stars">★★★★★</div><blockquote>“Great service, and so fast. I called in the morning and was very happy with the outcome. Highly recommended.”</blockquote><cite>Debbie Clifton · Orlando</cite></article></div></div></section>
+    <section class="areas"><div class="wrap"><div class="area-box" data-reveal><div><div class="eyebrow">Proudly serving</div><h2>Orlando & nearby communities</h2><p>From our home base at 2311 Henderson Dr Unit A, we cover the places you call home.</p></div><div class="area-list"><span>Orlando</span><span>Winter Park</span><span>Oviedo</span><span>Maitland</span><span>Windermere</span><span>Lake Mary</span><span>Longwood</span><span>Belle Isle</span></div></div></div></section>
+    <section class="contact" id="contact"><div class="wrap contact-grid"><div data-reveal><div class="eyebrow">Let's get things flowing</div><h2>Tell us what is going on.</h2><p>Send a few details and our friendly team will help you find the next step. For emergencies, call us directly.</p><div class="contact-info"><div><strong>Phone</strong><a href="tel:+14078983538">(407) 898-3538</a></div><div><strong>Email</strong><a href="mailto:Info@emeraldplumbing.net">Info@emeraldplumbing.net</a></div><div><strong>Visit</strong><span>2311 Henderson Dr Unit A<br>Orlando, FL 32806</span></div><div><strong>Hours</strong><span>Open 24 hours, 7 days a week</span></div></div></div><form id="contact-form" data-reveal><label>Name<input required name="name" type="text" placeholder="Your name"></label><label>Phone<input required name="phone" type="tel" placeholder="(407) 000-0000"></label><label class="full">Email<input required name="email" type="email" placeholder="you@example.com"></label><label class="full">How can we help?<textarea required name="message" placeholder="Tell us a little about the plumbing issue..."></textarea></label><button class="button primary" type="submit">Request a callback <span>↗</span></button><p id="form-status" role="status" aria-live="polite"></p></form></div></section>
+  </main>
+  <footer><div class="wrap"><div class="footer-grid"><div><a class="brand" href="#top"><img class="brand-logo" src="https://www.emeraldplumbing.net/images/logo.png" alt="Emerald Plumbing of Orlando"></a><p>Full-service plumbing and repipe specialists serving Orlando and Central Florida, day or night.</p></div><div><h3>Explore</h3><ul><li><a href="#services">Our services</a></li><li><a href="#why-us">Why Emerald</a></li><li><a href="#reviews">Customer reviews</a></li><li><a href="#contact">Contact us</a></li></ul></div><div><h3>Get in touch</h3><ul><li><a href="tel:+14078983538">(407) 898-3538</a></li><li><a href="mailto:Info@emeraldplumbing.net">Info@emeraldplumbing.net</a></li><li>Open 24 hours</li></ul></div></div><div class="copyright"><span>© <span id="year"></span> Emerald Plumbing. All rights reserved.</span><span>Licensed, insured & ready to help.</span></div></div></footer>
+  <a class="mobile-call" href="tel:+14078983538">☎ &nbsp; Call Emerald Plumbing</a>
+  <script>
+    const header = document.querySelector('#site-header');
+    document.querySelector('.menu').addEventListener('click', () => header.classList.toggle('open'));
+    document.querySelectorAll('nav a').forEach(link => link.addEventListener('click', () => header.classList.remove('open')));
+    document.querySelector('#year').textContent = new Date().getFullYear();
+    document.querySelector('#contact-form').addEventListener('submit', event => { event.preventDefault(); document.querySelector('#form-status').textContent = 'Thanks - we received your request and will be in touch shortly.'; event.target.reset(); });
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }), { threshold:.12 });
+    document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
